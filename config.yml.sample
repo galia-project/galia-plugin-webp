@@ -1,0 +1,41 @@
+##
+# This file contains all of the configuration keys used by WebPEncoder.
+# Simply copy them into your main application configuration.
+#
+
+#----------------------------------------
+# WebPDecoder
+#----------------------------------------
+
+# Enables multi-threaded decoding.
+decoder.WebPDecoder.multithreading = true
+
+#----------------------------------------
+# WebPEncoder
+#----------------------------------------
+
+# Whether to enable lossless encoding.
+encoder.WebPEncoder.lossless = false
+
+# Compression factor between 0 and 100.
+# For lossy compression, a small factor produces a smaller file with lower
+# quality. Best quality is achieved by using a value of 100.
+# For lossless compression, a small factor enables faster compression speed,
+# but produces a larger file. Maximum compression is achieved by using a
+# value of 100.
+encoder.WebPEncoder.quality = 75
+
+# Controls the trade off between encoding speed and the compressed file size
+# and quality. Possible values range from 0 to 6. When higher values are used,
+# the encoder will spend more time inspecting additional encoding
+# possibilities and decide on the quality gain. Lower values can result in
+# faster processing time at the expense of larger file size and lower
+# compression quality.
+encoder.WebPEncoder.method = 4
+
+# Spends additional time optimizing the filtering strength to reach a
+# well-balanced quality (lossy only).
+encoder.WebPEncoder.autofilter = false
+
+# Enables multi-threaded encoding.
+encoder.WebPEncoder.multithreading = true
